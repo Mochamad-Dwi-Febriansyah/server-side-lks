@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container{
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 2rem;
+}
+form h1{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.form-input{
+    width: 100%;
+}
+
+.form-input input[type="text"], .form-button button{
+    width: 100%;
+    margin: .5rem 0;
+    padding: .5rem;
+    outline: none;
+    border: 1px solid black;
+}
+.form-button button{
+    cursor: pointer;
+}
+.form-buttonn{
+    background-color: #F0F0F0;
+}
+.form-buttonn .bn{
+    display: block;
+    border: 1px solid black;
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    color: black; 
+}
+.br{
+
+    width: 40%;
+    height: 1px;
+    margin: 15px auto 20px auto;
+    background-color: black;
+}

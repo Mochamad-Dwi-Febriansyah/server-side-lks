@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    list-style: none;
+}
+.container{
+    max-width: 600px;
+    border: 1px solid black;
+    margin: .5rem auto;
+}
+.container .title{
+    text-align: center;
+    padding: .5rem;
+    border-bottom: 1px solid black;
+}
+.container .menu-button{
+    /* padding: .5rem; */
+    border-bottom: 1px solid black;
+}
+.container .menu-button a{
+    display: inline-block;
+    padding: .5rem;
+    text-decoration: none;
+    color: black;
+}
+.container .menu-button a:hover{
+    background-color: black;
+    color: white;
+}
+.container .menu-help{
+    padding: .5rem;
+    border-bottom: 1px solid black;
+    display: flex;
+    gap: 1rem;
+}
+.container .menu-help .search form{
+    border: 1px solid black;
+}
+.container .menu-help .search form input{
+    padding: .5rem;
+    border: none;
+    outline: none;
+}
+.container .menu-help .search form button{
+    padding: .5rem;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.container .menu-help .sort-by button{
+    cursor: pointer;
+    color: white;
+    border: 1px solid black;
+    padding: .5rem;
+    background-color: black;
+}
+.container .main-quiz{
+    border-bottom: 1px solid black;
+    padding: .5rem;
+}
+.container .main-quiz .quiz-box{
+    border-bottom: 1px solid black;
+    padding: .5rem 0;
+}
+.container .main-quiz .quiz-box .title-quiz{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .main-quiz .quiz-box .title-quiz h2 a{
+    text-decoration: none;
+
+}
+.container .main-quiz .quiz-box .title-quiz h3{
+    padding: .5rem 1.5rem;
+    background-color: aqua;
+}
+
+.container .menu-info{
+    padding: .5rem;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.container .menu-info .info{
+    display: flex;
+    flex-direction: column;
+}
+.container .main-quiz-action{
+    border-bottom: 1px solid black;
+    padding: .5rem;
+}
+.container .main-quiz-action .quiz-action-box{
+    border-bottom: 1px solid black;
+    padding: .5rem 0;
+}
+.container .main-quiz-action .quiz-action-box .sub-title-action-quiz{
+    margin: 1rem;
+    line-height: 1.5rem;
+}
