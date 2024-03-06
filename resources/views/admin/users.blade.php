@@ -29,20 +29,13 @@
             @foreach ($getRecord as $item)    
             <div class="quiz-box">
                 <div class="title-quiz">
-                    <h2>{{ $loop->iteration }}. {{ $item->name }}</h2>
-                    <div class="action-button">
-                        <h4 class="details"><a href="">Details</a></h4>
-                        <h4 class="edit"><a href="">Edit</a></h4>
-                        <h4 class="hapus"><a href="">Hapus</a></h4>
-                    </div>
+                    <h2>{{ $loop->iteration }}. {{ $item->user_name }}</h2> 
                 </div>
                 <div class="sub-title-quiz">
                     <ul>
-                        <li>Kategori : {{ $item->category }}</li>
-                        <li>Jadwal : {{ $item->schedule }}</li>
-                        <li>Jam : {{ $item->time_start }} - {{ $item->time_end }}</li>
-                        <li>Random : {{ $item->random_type }}</li>
-                        <li>Status : {{ $item->status }}</li>
+                        <li>Username : {{ $item->user_name }}</li>
+                        <li>Tanggal Register : {{ $item->register }}</li>
+                        <li>Total Quizz Diikuti : {{ $item->quizzes_count }}</li>
                     </ul>
                 </div>
             </div> 

@@ -35,4 +35,5 @@ Route::group(['middleware' => 'user'], function() {
 
 Route::group(['middleware' => 'admin'], function() {
     Route::get('/admin', [AdminController::class, 'index']);
+    Route::get('/users', [AdminController::class, 'users']);
 });

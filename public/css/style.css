@@ -73,11 +73,32 @@
 }
 .container .main-quiz .quiz-box .title-quiz h2 a{
     text-decoration: none;
-
 }
 .container .main-quiz .quiz-box .title-quiz h3{
     padding: .5rem 1.5rem;
     background-color: aqua;
+}
+.container .main-quiz .quiz-box .title-quiz .action-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .main-quiz .quiz-box .title-quiz .action-button .details{
+    padding: .5rem 1.5rem;
+    background-color: #4285f4;
+}
+.container .main-quiz .quiz-box .title-quiz .action-button .edit{
+    padding: .5rem 1.5rem;
+    background-color: #f4b400;
+}
+.container .main-quiz .quiz-box .title-quiz .action-button .hapus{
+    padding: .5rem 1.5rem;
+    background-color: #db4437;
+}
+
+.container .main-quiz .quiz-box .title-quiz .action-button h4 a{
+    text-decoration: none;
+    color: white;
 }
 
 .container .menu-info{

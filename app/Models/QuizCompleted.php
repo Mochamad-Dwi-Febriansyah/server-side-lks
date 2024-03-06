@@ -27,4 +27,11 @@ class QuizCompleted extends Model
                     // }
         return $return;
     }
+    static public function getUserQuizz($remove_paginate = 0){
+        return  QuizCompleted::selectRaw( 'quiz_completeds.*, users.name as user_name, users.created_at as register , COUNT(quiz_completeds.quizz_id) as quizzes_count')
+                    ->join('users' , 'users.id', '=', 'quiz_completeds.user_id') 
+                    ->groupBy('quiz_completeds.user_id')
+                     ->get();
+                    
+    }
 }
